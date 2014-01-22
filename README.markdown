@@ -31,7 +31,13 @@ The following example uses [expressjs][], but this should work fine using [conne
     var app = express.createServer();
     app.use(express.cookieParser());
     app.use(express.session({
-        store: new MySQLSessionStore("dbname", "user", "password", {
+        store: new MySQLSessionStore({
+            database: "dbname",
+            user: "user",
+            password: "password"
+            --OR--
+            sequelize: "sequelize object"
+
             // options...
         }),
         secret: "keyboard cat"
@@ -40,6 +46,10 @@ The following example uses [expressjs][], but this should work fine using [conne
 
 Options
 -------
+
+### sequelize ###
+
+If set, will use it.
 
 ### forceSync ###
 
