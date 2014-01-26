@@ -51,6 +51,10 @@ Options
 
 If set, will use it.
 
+### table ###
+
+Default: `Session`. Table name for Sessions data.
+
 ### forceSync ###
 
 Default: `false`. If set to true, the Sessions table will be dropped before being reinitialized, effectively clearing all session data.
