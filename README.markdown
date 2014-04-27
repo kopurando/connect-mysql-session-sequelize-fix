@@ -38,6 +38,8 @@ The following example uses [expressjs][], but this should work fine using [conne
             --OR--
             sequelize: "sequelize object"
 
+            memcached: "memcached object",
+
             // options...
         }),
         secret: "keyboard cat"
@@ -50,6 +52,10 @@ Options
 ### sequelize ###
 
 If set, will use it.
+
+### memcached ###
+
+If set, will use memcached interface. Memcached object is expected to have .get .set and .del methods.
 
 ### table ###
 
