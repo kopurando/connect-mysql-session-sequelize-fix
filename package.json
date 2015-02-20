@@ -12,7 +12,7 @@
     "node": ">=0.4"
   },
   "dependencies": {
-    "sequelize": "git://github.com/stilia/sequelize.git#master",
+    "sequelize": "git://github.com/stilia/sequelize.git#master"
   },
   "devDependencies": {
     "connect": ">=1.6"
